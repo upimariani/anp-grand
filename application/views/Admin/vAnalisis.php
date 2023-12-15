@@ -31,9 +31,9 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12  ">
-					<button type="button" class="btn btn-default mb-3" data-toggle="modal" data-target="#modal-default">
+					<!-- <button type="button" class="btn btn-default mb-3" data-toggle="modal" data-target="#modal-default">
 						<i class="fas fa-chart-bar"></i> Tambah Analisis Karyawan
-					</button>
+					</button> -->
 					<div class="card">
 						<div class="card-header">
 							<h3 class="card-title">Informasi Karyawan</h3>
@@ -51,7 +51,6 @@
 										<th class="text-center">Lama Kerja</th>
 										<th class="text-center">Lemburan</th>
 										<th class="text-center">Hasil</th>
-										<th class="text-center">Action</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -69,11 +68,7 @@
 											<td class="text-center"><?= $value->lemburan ?></td>
 											<td class="text-center"><?= $value->hasil ?></td>
 
-											<td class="text-center">
-												<div class="btn-group">
-													<a href="<?= base_url('Admin/cAnalisis/delete/' . $value->id_analisis) ?>" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-												</div>
-											</td>
+
 										</tr>
 									<?php
 									}
@@ -91,7 +86,6 @@
 										<th class="text-center">Lama Kerja</th>
 										<th class="text-center">Lemburan</th>
 										<th class="text-center">Hasil</th>
-										<th class="text-center">Action</th>
 									</tr>
 								</tfoot>
 							</table>

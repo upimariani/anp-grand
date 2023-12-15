@@ -8,6 +8,9 @@ class mAnalisis extends CI_Model
 		$this->db->select('*');
 		$this->db->from('analisis');
 		$this->db->join('karyawan', 'analisis.id_karyawan = karyawan.id_karyawan', 'left');
+		$this->db->order_by('hasil', 'desc');
+
+
 		return $this->db->get()->result();
 	}
 	public function karyawan()
